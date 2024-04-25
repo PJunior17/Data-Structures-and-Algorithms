@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int len(char string[]) {
+	int n = 0;
+
+	while(string[n] != '\0') {
+		n++;
+	}
+	return n;
+}
+
+int main() {
+	char s[100];
+	printf("Enter a string you want to reverse: ");
+	scanf("%[^\n]", s);
+       	
+	int a = len(s);
+
+	printf("%d", a);
+
+	return 0;
+}
